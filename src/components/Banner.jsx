@@ -1,0 +1,30 @@
+
+import BannerImage from '../assets/images/bannerimage.png';
+
+const Banner = () => {
+    return (
+        <section
+            className="w-full bg-cover bg-center flex items-center justify-center min-h-[320px] md:min-h-[420px] px-4"
+            style={{ backgroundImage: `url(${BannerImage})` }}
+        >
+            <div className="container flex flex-col items-center justify-center text-center py-12">
+                <h2 className="font-primary text-2xl md:text-4xl font-bold text-white mb-4 drop-shadow-lg">
+                    Turn every celebration into a timeless memory
+                </h2>
+                <p className="font-secondary text-lg md:text-xl text-white mb-6 drop-shadow">
+                    let us capture yours with elegance!
+                </p>
+                <a
+                    href="https://wa.me/6285396144172?text=Halo%2C%20saya%20ingin%20bertanya%20mengenai%20Lensaloka"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-[#EAC347] text-[#273F3A] font-bold px-8 py-3 rounded-full shadow-md hover:bg-[#ffd966] transition font-secondary inline-block"
+                >
+                    Hubungi Kami
+                </a>
+            </div>
+        </section>
+    );
+}
+
+export default Banner;
