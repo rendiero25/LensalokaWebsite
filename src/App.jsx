@@ -7,7 +7,7 @@ import Services from "./components/Services";
 import InstantPrints from "./components/InstantPrints";
 import WhatUGet from "./components/WhatUGet";
 import Banner from "./components/Banner";
-// import Portfolio from "./components/Portfolio";
+import Portfolio from "./components/Portfolio";
 import Testimonial from "./components/Testimonial";
 import Footer from './components/Footer';
 
@@ -44,7 +44,7 @@ const App = () => {
           <InstantPrints />
           <WhatUGet />
           <Banner />
-          {/* <Portfolio /> */}
+          <Portfolio />
           <Testimonial />
           <Footer />
         </div>
