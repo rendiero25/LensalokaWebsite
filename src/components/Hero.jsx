@@ -4,7 +4,7 @@ import { FaArrowDown } from "react-icons/fa";
 
 const Hero = () => {
     return (
-    <section className="flex flex-col items-center justify-center text-center px-4 flex-grow min-h-0" style={{ minHeight: 'calc(100vh - 72px)' }}>
+        <section className="flex flex-col items-center justify-center text-center px-4 flex-grow min-h-0" style={{ minHeight: 'calc(100vh - 100px)' }}>
             <h1 className="font-primary text-3xl md:text-5xl 2xl:text-7xl leading-tight font-light mb-4 text-white">
                 Capture Meaningful Moments<br />
                 Made Easy, Elegant, and Enjoyable

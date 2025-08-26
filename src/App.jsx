@@ -10,6 +10,7 @@ import Banner from "./components/Banner";
 import Portfolio from "./components/Portfolio";
 import Testimonial from "./components/Testimonial";
 import Footer from './components/Footer';
+import backgroundLines from './assets/images/bg-lines.png'
 
 const App = () => {
   return (

@@ -18,20 +18,22 @@ const Header = () => {
 
   return (
     <header className="text-white w-full sticky top-0 z-50">
-      <div className="container mx-auto px-4 pt-10">
+      <div className="container mx-auto pt-10 px-6 sm:px-12">
         <nav className="flex items-center justify-between py-3 md:py-4 relative">
           {/* Logo */}
           <a href="#" className="flex items-center gap-2">
             <img src={Logo} alt="Lensaloka Logo" className="w-55" />
           </a>
+
           {/* Desktop Nav */}
           <ul className="hidden md:flex gap-6 lg:gap-8 font-primary text-base lg:text-lg">
             {navLinks.map(link => (
               <li key={link.name}>
-                <a href={link.href} className="hover:text-white transition-colors duration-200">{link.name}</a>
+                <a href={link.href} className="hover:text-secondary transition-colors duration-200">{link.name}</a>
               </li>
             ))}
           </ul>
+          
           {/* Mobile/Tablet Nav (Hamburger) */}
           <button
             className="md:hidden p-2 rounded focus:outline-none focus:ring-2 focus:ring-[#EAC347]"
