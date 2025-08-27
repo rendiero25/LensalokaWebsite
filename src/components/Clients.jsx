@@ -35,7 +35,7 @@ const quadrupleLogos = [...clientLogos, ...clientLogos, ...clientLogos, ...clien
 
 const Clients = () => {
     return (
-        <section id='clients' className="w-full bg-secondary py-15">
+        <section id='clients' className="w-full bg-secondary py-8">
             <div className="">
                 <Swiper
                     modules={[Autoplay]}

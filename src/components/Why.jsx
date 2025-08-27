@@ -7,7 +7,7 @@ const Why = () => {
     return (
         <section 
             id='why'
-            className="w-full py-10 xl:py-20 bg-cover bg-center"
+            className="w-full py-10 xl:py-10 bg-cover bg-center"
             style={{ backgroundImage: `url(${BgLines})`, objectFit: 'cover' }}
             >             
                 <div className='flex justify-center items-center'>
@@ -16,7 +16,7 @@ const Why = () => {
                             <h2 className="font-primary leading-tight text-3xl md:text-6xl text-center md:text-left font-normal text-[#273F3A] mb-4 md:mb-0 md:mr-6 whitespace-pre-line">
                                 Lebih dari Sekadar <br /> Photobooth,
                             </h2>
-                            <p className="font-secondary text-base font-normal md:text-2xl text-center md:text-left text-[#273F3A] max-w-2xl">
+                            <p className="font-secondary text-md font-normal md:text-2xl text-center md:text-left text-[#273F3A] max-w-2xl">
                                 Kami membantu Anda menciptakan pengalaman berharga
                                 yang tak terlupakan dengan sentuhan elegan dan kualitas premium.
                             </p>
@@ -27,19 +27,19 @@ const Why = () => {
                             <div className="flex flex-col items-center text-center rounded-xl p-6 flex-1">
                                 <img src={Icon1} alt="Seamless Experience" className="h-16 w-16 mb-4" />
                                 <h3 className="font-primary text-lg md:text-4xl font-normal text-[#273F3A] mb-4">Seamless Experience</h3>
-                                <p className="font-secondary text-sm md:text-2xl text-[#273F3A]">Dari booking hingga eksekusi, semua serba praktis dan profesional.</p>
+                                <p className="font-secondary text-sm md:text-xl text-[#273F3A]">Dari booking hingga eksekusi, semua serba praktis dan profesional.</p>
                             </div>
                             {/* Icon 2 */}
                             <div className="flex flex-col items-center text-center rounded-xl p-6 flex-1">
                                 <img src={Icon2} alt="High-Quality Prints & Setup" className="h-16 w-16 mb-4" />
                                 <h3 className="font-primary text-lg md:text-4xl font-normal text-[#273F3A] mb-4">High-Quality Prints & Setup</h3>
-                                <p className="font-secondary text-sm md:text-2xl text-[#273F3A]">Foto tajam, desain cetakan eksklusif, booth elegan sesuai brand atau event Anda..</p>
+                                <p className="font-secondary text-sm md:text-xl text-[#273F3A]">Foto tajam, desain cetakan eksklusif, booth elegan sesuai brand atau event Anda..</p>
                             </div>
                             {/* Icon 3 */}
                             <div className="flex flex-col items-center text-center rounded-xl p-6 flex-1">
                                 <img src={Icon3} alt="Memorable Engagement" className="h-16 w-16 mb-4" />
                                 <h3 className="font-primary text-lg md:text-4xl font-normal text-[#273F3A] mb-4">Memorable Engagement</h3>
-                                <p className="font-secondary text-sm md:text-2xl text-[#273F3A]">Jadi daya tarik utama event, 
+                                <p className="font-secondary text-sm md:text-xl text-[#273F3A]">Jadi daya tarik utama event, 
                                 bikin tamu betah berfoto & bawa 
                                 pulang kenangan.</p>
                             </div>

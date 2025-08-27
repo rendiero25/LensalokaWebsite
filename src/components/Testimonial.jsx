@@ -52,7 +52,7 @@ const Testimonial = () => {
                     <h2 className="font-primary text-center xl:text-left text-3xl md:text-6xl font-bold text-[#273F3A] mb-4 md:mb-0 md:mr-6 whitespace-pre-line">
                         Apa Kata Klien Kami
                     </h2>
-                    <p className="font-secondary text-center xl:text-left text-base md:text-2xl text-[#273F3A] max-w-xl">
+                    <p className="font-secondary text-center xl:text-left text-md md:text-2xl text-[#273F3A] max-w-xl">
                         Senyum dan kepuasan klien adalah bukti nyata 
                         dari kualitas layanan Lensaloka.
                     </p>

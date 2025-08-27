@@ -10,7 +10,7 @@ const Services = () => {
             id='services' 
             className="w-full bg-cover bg-center relative overflow-hidden"
             style={{
-                backgroundImage: 'linear-gradient(to bottom, #EAC347 0%, #fff 100%)',
+                backgroundImage: 'linear-gradient(to bottom, #F5B52F 0%, #fff 100%)',
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
             }}
@@ -38,19 +38,19 @@ const Services = () => {
             />
             <div className='flex justify-center items-center relative z-10'>
                 <div className='flex justify-center items-center'>
-                    <div className="container mx-auto px-6 sm:px-12 py-10 xl:py-20">
+                    <div className="container mx-auto px-6 sm:px-12 py-10 xl:py-10">
                         <div className="flex flex-col justify-between md:flex-row md:items-end md:gap-8 mb-10">
                             <h2 className="font-primary leading-tight text-3xl md:text-6xl text-center md:text-left font-normal text-[#273F3A] mb-4 md:mb-0 md:mr-6 whitespace-pre-line">
                                 Pilihan Layanan <br /> Lensaloka
                             </h2>
-                            <p className="font-secondary text-base md:text-2xl text-center md:text-left text-[#273F3A] max-w-xl">
+                            <p className="font-secondary text-md md:text-2xl text-center md:text-left text-[#273F3A] max-w-xl">
                                 Dari photobooth elegan hingga mobile photobooth, kami hadir dengan solusi yang sesuai untuk setiap jenis acara.
                             </p>
                         </div>
 
                         <div className="flex flex-col md:flex-row gap-10">
                             {/* Section A: Lensaloka Photobooth */}
-                            <div className="relative flex-1 overflow-hidden shadow-2xl h-[800px] flex flex-col justify-end">
+                            <div className="relative flex-1 overflow-hidden shadow-2xl h-[500px] flex flex-col justify-end">
                                 <video
                                     className="absolute top-0 left-0 w-full h-full object-cover z-0"
                                     src={PhotoBoothVideo}
@@ -76,8 +76,9 @@ const Services = () => {
                                     </div>
                                 </div>
                             </div>
+                            
                             {/* Section B: Mobile Photobooth */}
-                            <div className="relative flex-1 overflow-hidden shadow-2xl h-[800px] flex flex-col justify-end">
+                            <div className="relative flex-1 overflow-hidden shadow-2xl h-[500px] flex flex-col justify-end">
                                 <video
                                     className="absolute top-0 left-0 w-full h-full object-cover z-0"
                                     src={MobileBoothVideo}

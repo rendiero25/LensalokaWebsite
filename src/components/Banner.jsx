@@ -18,7 +18,7 @@ const Banner = () => {
                     href="https://wa.me/6285396144172?text=Halo%2C%20saya%20ingin%20bertanya%20mengenai%20Lensaloka"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-[#EAC347] text-[#273F3A] font-bold px-8 py-3 uppercase rounded-full shadow-md hover:bg-[#ffd966] transition font-secondary inline-block"
+                    className="bg-[#F5B52F] text-[#273F3A] font-bold px-8 py-3 uppercase rounded-full shadow-md hover:bg-[#ffd966] transition font-secondary inline-block"
                 >
                     Hubungi Kami
                 </a>

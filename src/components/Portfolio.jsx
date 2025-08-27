@@ -50,7 +50,7 @@ const Portfolio = () => {
     return (
         <section
             id='portfolio'
-            className="w-full py-16 xl:py-20 px-4 bg-cover bg-center relative overflow-hidden"
+            className="w-full py-16 xl:py-10 px-4 bg-cover bg-center relative overflow-hidden"
         >
             {/* BgLines absolute di atas dan bawah section, berkelanjutan */}
             <img
@@ -107,7 +107,7 @@ const Portfolio = () => {
                                             <div className="font-primary font-bold text-2xl bg-secondary py-2 px-4 rounded-full text-[#273F3A]">{brand.name}</div>
                                             
                                             <button
-                                                className="font-secondary text-lg xl:text-xl text-primary font-bold cursor-pointer hover:bg-primary hover:text-[#EAC347]"
+                                                className="font-secondary text-lg xl:text-xl text-primary font-bold cursor-pointer hover:text-[#EAC347]"
                                                 onClick={() => openModal(brand)}
                                             >
                                                 See more
@@ -214,13 +214,23 @@ const Portfolio = () => {
                     )}
 
                     {/* Moments with Influencers */}
-                    <div className="mt-10 xl:mt-25">
+                    <div className="mt-10 xl:mt-15">
                         <h3 className="font-primary text-2xl font-normal text-[#273F3A] mb-6 text-center">Moments with Influencers</h3>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 xl:gap-8">
                             {influencers.map((item, idx) => (
                                 <div key={idx} className="flex flex-col items-center rounded-xl mb-0 xl:mb-4 p-2 xl:p-6 z-10">
                                     <img src={item.img} alt={item.name} className="h-70 xl:h-140 w-400 mb-4 object-cover rounded-lg" />
-                                    <div className="font-primary text-2xl font-bold bg-secondary py-2 px-4 rounded-full text-[#273F3A]">{item.name}</div>
+                                    
+                                    <div className='flex flex-row justify-between items-center w-full'>
+                                        <div className="font-primary text-2xl font-bold bg-secondary py-2 px-4 rounded-full text-[#273F3A]">{item.name}</div>
+                                        
+                                        <button
+                                                className="font-secondary text-lg xl:text-xl text-primary font-bold cursor-pointer hover:text-[#EAC347]"
+                                                onClick={() => openModal(brand)}
+                                            >
+                                                See more
+                                            </button>
+                                    </div>
                                 </div>
                             ))}
                         </div>

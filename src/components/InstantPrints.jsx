@@ -8,7 +8,7 @@ const InstantPrints = () => {
     return (
         <section
             id='instant-prints'
-            className="w-full bg-cover bg-center relative overflow-hidden"
+            className="mt-10 w-full bg-cover bg-center relative overflow-hidden"
         >
             {/* BgLines absolute atas dan bawah section */}
             <img
@@ -34,7 +34,7 @@ const InstantPrints = () => {
             <div className="w-full px-6 sm:px-12 mb-10 text-center flex flex-col justify-between items-center">
                 <h2 className="font-primary text-3xl md:text-6xl font-normal text-[#273F3A] mb-4">Instant Prints</h2>
                 <p className="font-secondary text-lg md:text-3xl text-[#273F3A] mb-6 font-normal">Spontaneous Moments Captured Instantly</p>
-                <p className="font-secondary font-normal text-xl md:text-2xl text-[#273F3A] max-w-4xl mb-0 xl:mb-8">
+                <p className="font-secondary font-normal text-md md:text-2xl text-[#273F3A] max-w-4xl mb-0 xl:mb-8">
                     Bukan sekadar foto digital, tapi kenangan nyata yang bisa langsung dibawa pulang. Lensaloka menghadirkan hasil cetakan instan dengan kualitas premium yang bisa jadi bagian dari souvenir event Anda.
                 </p>
             </div>

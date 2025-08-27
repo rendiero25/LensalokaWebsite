@@ -28,7 +28,7 @@ const Footer = () => {
                                 href="https://wa.me/6285396144172?text=Halo%2C%20saya%20ingin%20bertanya%20mengenai%20Lensaloka"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="bg-secondary text-[#273F3A] text-xl text-center font-normal px-25 py-5 rounded-full shadow-md hover:bg-[#ffd966] transition font-secondary inline-block"
+                                className="bg-secondary text-[#273F3A] text-lg text-center font-normal px-10 xl:px-25 py-3 xl:py-5 rounded-full shadow-md hover:bg-[#ffd966] transition font-secondary inline-block"
                             >
                                 Hubungi Kami Sekarang
                             </a>
@@ -36,7 +36,7 @@ const Footer = () => {
                     </div>
 
                     {/* Sesi 2: Info & Slogan */}
-                    <div className="container pt-20 mx-auto px-6 sm:px-12 flex flex-col md:flex-row justify-between gap-10">
+                    <div className="container pt-10 mx-auto px-6 sm:px-12 flex flex-col md:flex-row justify-between gap-10">
                         {/* Kiri: Info */}
                         <div className="flex-1 flex flex-col gap-1 items-center md:items-start">
                             <img src={Logo} alt="Lensaloka Logo" className="h-15 mb-5" />
@@ -71,7 +71,7 @@ const Footer = () => {
                     </div>
 
                     {/* Sesi 3: Copyright */}
-                    <div className="text-center text-[#EAC347] text-sm pt-10">
+                    <div className="text-center text-[#F5B52F] text-sm pt-10">
                         Copyright 2025. Developed by <a href="https://www.rendiero.dev" target="_blank" rel="noopener noreferrer" className=" hover:text-white font-bold">rendiero</a>.
                     </div>
                 </div>

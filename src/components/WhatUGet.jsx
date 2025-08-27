@@ -19,9 +19,9 @@ const WhatUGet = () => {
     return (
         <section
             id='what-u-get'
-            className="w-full py-10 xl:py-20 px-4 bg-cover bg-center relative overflow-hidden"
+            className="w-full py-10 xl:py-10 px-4 bg-cover bg-center relative overflow-hidden"
             style={{
-                backgroundImage: 'linear-gradient(to bottom, #EAC347 0%, #fff 100%)',
+                backgroundImage: 'linear-gradient(to bottom, #F5B52F 0%, #F5B52F 70%, #fff 100%)',
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
             }}
@@ -54,7 +54,7 @@ const WhatUGet = () => {
                         <h2 className="font-primary text-3xl md:text-6xl font-normal text-[#273F3A] mb-4 md:mb-0 md:mr-6 whitespace-pre-line">
                             Apa yang Anda Dapatkan
                         </h2>
-                        <p className="font-secondary text-center xl:text-left text-base md:text-2xl text-[#273F3A] max-w-xl">
+                        <p className="font-secondary text-center xl:text-left text-md md:text-2xl text-[#273F3A] max-w-xl">
                             Semua yang Anda butuhkan untuk membuat acara lebih berkesan, lengkap dalam satu paket layanan Lensaloka.
                         </p>
                     </div>

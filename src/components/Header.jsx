@@ -30,7 +30,7 @@ const Header = () => {
 
   return (
     <header 
-      className={`text-white w-full fixed top-0 z-50 transition-all duration-300
+      className={`text-white w-full fixed top-0 z-90 transition-all duration-300
         ${isScrolled ? 'bg-[#273F3A] shadow-lg' : 'bg-transparent'}
       `}
     >
