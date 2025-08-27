@@ -30,9 +30,10 @@ const Header = () => {
 
   return (
     <header 
-      className={`text-white w-full fixed top-0 z-[999] transition-all duration-300
+      className={`text-white w-full fixed top-0 transition-all duration-300
         ${isScrolled ? 'bg-[#273F3A] shadow-lg' : 'bg-transparent'}
       `}
+      style={{ zIndex: 9999 }}
     >
       <div className={`container mx-auto px-6 sm:px-12 transition-all duration-300 ${isScrolled ? 'pt-2' : 'pt-10'}`}>
         <nav className="flex items-center justify-between py-3 md:py-4 relative">
@@ -60,7 +61,10 @@ const Header = () => {
           </button>
           {/* Mobile Menu Dropdown */}
           {menuOpen && (
-            <div className="absolute top-full left-0 w-full bg-[#273F3A] shadow-lg md:hidden animate-fadeIn z-40">
+            <div 
+              className="absolute top-full left-0 w-full bg-[#273F3A] shadow-lg md:hidden animate-fadeIn"
+              style={{ zIndex: 9998 }}
+            >
               <ul className="flex flex-col py-4 font-secondary text-base">
                 {navLinks.map(link => (
                   <li key={link.name} className="px-6 py-2">
