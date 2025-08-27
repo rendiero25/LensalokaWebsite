@@ -28,12 +28,39 @@ const Header = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // Tambahkan CSS langsung ke head untuk memastikan prioritas
+  React.useEffect(() => {
+    const style = document.createElement('style');
+    style.innerHTML = `
+      .header-override {
+        position: fixed !important;
+        top: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        z-index: 999999 !important;
+        width: 100% !important;
+      }
+    `;
+    document.head.appendChild(style);
+    
+    return () => {
+      document.head.removeChild(style);
+    };
+  }, []);
+
   return (
     <header 
-      className={`text-white w-full fixed top-0 transition-all duration-300
+      className={`header-override text-white w-full fixed top-0 transition-all duration-300
         ${isScrolled ? 'bg-[#273F3A] shadow-lg' : 'bg-transparent'}
       `}
-      style={{ zIndex: 9999 }}
+      style={{ 
+        zIndex: 999999, 
+        position: 'fixed',
+        top: 0,
+        left: 0,
+        right: 0,
+        width: '100%'
+      }}
     >
       <div className={`container mx-auto px-6 sm:px-12 transition-all duration-300 ${isScrolled ? 'pt-2' : 'pt-10'}`}>
         <nav className="flex items-center justify-between py-3 md:py-4 relative">
