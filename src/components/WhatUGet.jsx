@@ -51,7 +51,7 @@ const WhatUGet = () => {
             <div className='flex justify-center items-center'>
                 <div className="container px-6 sm:px-12 flex flex-col justify-between items-center">
                     <div className="flex flex-col md:flex-row w-full justify-between items-end md:gap-8 mb-10">
-                        <h2 className="font-primary text-3xl md:text-6xl font-normal text-[#273F3A] mb-4 md:mb-0 md:mr-6 whitespace-pre-line">
+                        <h2 className="font-primary text-3xl md:text-5xl font-normal text-[#273F3A] mb-4 md:mb-0 md:mr-6 whitespace-pre-line">
                             Apa yang Anda Dapatkan
                         </h2>
                         <p className="font-secondary text-center xl:text-left text-md md:text-2xl text-[#273F3A] max-w-xl">

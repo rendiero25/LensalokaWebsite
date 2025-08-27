@@ -75,7 +75,7 @@ const Portfolio = () => {
             />
             <div className='flex justify-center items-center'>
                 <div className="container mx-auto px-6 sm:px-12 justify-between items-center w-full">
-                    <h2 className="font-primary text-3xl md:text-6xl font-normal text-center text-[#273F3A] mb-5 xl:mb-10">Portofolio Event</h2>
+                    <h2 className="font-primary text-3xl md:text-5xl font-normal text-center text-[#273F3A] mb-5 xl:mb-10">Portofolio Event</h2>
                     {/* Trusted by Brands Slider */}
                     <div className="mb-2">
                         <h3 className="font-primary font-normal text-2xl text-center text-[#273F3A] xl:mb-6">Trusted by Brands</h3>
