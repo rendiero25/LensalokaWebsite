@@ -59,7 +59,7 @@ const Services = () => {
                                     muted
                                     playsInline
                                 />
-                                <div className="absolute top-0 left-0 w-full h-full bg-[#273F3A]/60 z-10" />
+                                <div className="absolute top-0 left-0 w-full h-full bg-[#273F3A]/50 z-10" />
                                 
                                 <div className="relative z-20 p-10 xl:p-20 flex flex-col items-center h-full justify-between">
                                     <h3 className="font-primary text-4xl font-normal text-white mb-6 xl:mb-4 text-center">Lensaloka Photobooth</h3>

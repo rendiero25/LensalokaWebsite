@@ -39,6 +39,36 @@ const Header = () => {
         right: 0 !important;
         z-index: 999999 !important;
         width: 100% !important;
+        transform: translateZ(0) !important;
+        -webkit-transform: translateZ(0) !important;
+        backface-visibility: hidden !important;
+        -webkit-backface-visibility: hidden !important;
+      }
+      
+      /* Fix khusus untuk mobile */
+      @media (max-width: 1024px) {
+        .header-override {
+          position: fixed !important;
+          top: 0 !important;
+          left: 0 !important;
+          right: 0 !important;
+          z-index: 2147483647 !important;
+          width: 100vw !important;
+          transform: translate3d(0, 0, 0) !important;
+          -webkit-transform: translate3d(0, 0, 0) !important;
+          will-change: transform !important;
+          contain: layout style paint !important;
+        }
+        
+        /* Pastikan tidak ada elemen lain yang menutupi header di mobile */
+        body {
+          padding-top: 0 !important;
+        }
+        
+        /* Override semua z-index di mobile */
+        .header-override * {
+          z-index: inherit !important;
+        }
       }
     `;
     document.head.appendChild(style);
@@ -54,12 +84,17 @@ const Header = () => {
         ${isScrolled ? 'bg-[#273F3A] shadow-lg' : 'bg-transparent'}
       `}
       style={{ 
-        zIndex: 999999, 
+        zIndex: 2147483647, 
         position: 'fixed',
         top: 0,
         left: 0,
         right: 0,
-        width: '100%'
+        width: '100%',
+        transform: 'translateZ(0)',
+        WebkitTransform: 'translateZ(0)',
+        backfaceVisibility: 'hidden',
+        WebkitBackfaceVisibility: 'hidden',
+        willChange: 'transform'
       }}
     >
       <div className={`container mx-auto px-6 sm:px-12 transition-all duration-300 ${isScrolled ? 'pt-2' : 'pt-10'}`}>
