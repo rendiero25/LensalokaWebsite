@@ -7,12 +7,12 @@ const Why = () => {
     return (
         <section 
             id='why'
-            className="w-full py-16 xl:py-40 bg-cover bg-center"
+            className="w-full py-10 xl:py-20 bg-cover bg-center"
             style={{ backgroundImage: `url(${BgLines})`, objectFit: 'cover' }}
             >             
                 <div className='flex justify-center items-center'>
                     <div className="container w-full mx-auto px-6 sm:px-12 ">
-                        <div className="flex flex-col md:flex-row justify-between md:items-end md:gap-8 mb-10">
+                        <div className="flex flex-col md:flex-row justify-between md:items-end md:gap-8 mb-5 xl:mb-10">
                             <h2 className="font-primary leading-tight text-3xl md:text-6xl text-center md:text-left font-normal text-[#273F3A] mb-4 md:mb-0 md:mr-6 whitespace-pre-line">
                                 Lebih dari Sekadar <br /> Photobooth,
                             </h2>
@@ -22,7 +22,7 @@ const Why = () => {
                             </p>
                         </div>
 
-                        <div className="mt-20 flex flex-col md:flex-row gap-8 md:gap-6 lg:gap-12 justify-center items-stretch">
+                        <div className="xl:mt-20 flex flex-col md:flex-row gap-1 md:gap-6 lg:gap-12 justify-center items-stretch">
                             {/* Icon 1 */}
                             <div className="flex flex-col items-center text-center rounded-xl p-6 flex-1">
                                 <img src={Icon1} alt="Seamless Experience" className="h-16 w-16 mb-4" />

@@ -1,5 +1,5 @@
 import Line from '../assets/images/line.png'
-import { FaArrowDown } from "react-icons/fa";
+import { FaArrowDown, FaWhatsapp } from "react-icons/fa";
 
 
 const Hero = () => {
@@ -20,7 +20,7 @@ const Hero = () => {
                     href="https://wa.me/6285396144172?text=Halo%2C%20saya%20ingin%20bertanya%20mengenai"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-[#EAC347] text-[#273F3A] mt-20 font-bold px-8 py-3 rounded-full shadow-md hover:bg-[#ffd966] transition mb-6 font-secondary inline-block"
+                    className="bg-secondary text-[#273F3A] mt-5 xl:mt-20 font-bold px-8 py-3 rounded-full shadow-md hover:bg-[#ffd966] transition mb-6 font-secondary inline-block"
                 >
                     Book Now!
                 </a>

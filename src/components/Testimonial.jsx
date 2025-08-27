@@ -21,7 +21,7 @@ const testimonials = [
   {
     name: 'Ratna Fransisca',
     position: 'Marketing Manager, Fore Indonesia',
-    text: '“Kami senang banget bekerja sama dengan Lensaloka. Timnya profesional, responsif, dan setup photobooth-nya sesuai dengan brand guidelines kami. Sangat recommended!',
+    text: '“Kami senang banget bekerja sama dengan Lensaloka. Timnya profesional, responsif, dan setup photobooth-nya sesuai dengan brand guidelines kami',
     pic: image2
 },
   {
@@ -39,20 +39,20 @@ const testimonials = [
   {
     name: 'Dewi',
     position: 'Influencer',
-    text: 'Frame custom-nya lucu, hasil cetakannya tajam, Timnya profesional, responsif, dan setup photobooth-nya sesuai dengan brand guidelines kami, recommended banget!',
+    text: 'Frame custom-nya lucu, hasil cetakannya tajam, Timnya profesional, responsif, dan setup photobooth-nya sesuai dengan brand guidelines kami.',
     pic: image5
   },
 ];
 
 const Testimonial = () => {
     return (
-        <section className="w-full py-16 xl:py-40 px-4">
+        <section className="w-full pb-10 xl:pb-20 px-4">
             <div className="container mx-auto px-6 sm:px-12">
                 <div className="flex flex-col justify-between md:flex-row md:items-end md:gap-8 mb-10">
-                    <h2 className="font-primary text-3xl md:text-6xl font-bold text-[#273F3A] mb-4 md:mb-0 md:mr-6 whitespace-pre-line">
+                    <h2 className="font-primary text-center xl:text-left text-3xl md:text-6xl font-bold text-[#273F3A] mb-4 md:mb-0 md:mr-6 whitespace-pre-line">
                         Apa Kata Klien Kami
                     </h2>
-                    <p className="font-secondary text-base md:text-2xl text-[#273F3A] max-w-xl">
+                    <p className="font-secondary text-center xl:text-left text-base md:text-2xl text-[#273F3A] max-w-xl">
                         Senyum dan kepuasan klien adalah bukti nyata 
                         dari kualitas layanan Lensaloka.
                     </p>

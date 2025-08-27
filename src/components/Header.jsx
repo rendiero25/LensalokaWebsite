@@ -15,18 +15,34 @@ import React, { useState } from 'react';
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  React.useEffect(() => {
+    const handleScroll = () => {
+      const headerHeight = 100; // Perkiraan tinggi header dalam pixel
+      const scrollPosition = window.scrollY;
+      setIsScrolled(scrollPosition > headerHeight);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
-    <header className="text-white w-full sticky top-0 z-50">
-      <div className="container mx-auto pt-10 px-6 sm:px-12">
+    <header 
+      className={`text-white w-full fixed top-0 z-50 transition-all duration-300
+        ${isScrolled ? 'bg-[#273F3A] shadow-lg' : 'bg-transparent'}
+      `}
+    >
+      <div className={`container mx-auto px-6 sm:px-12 transition-all duration-300 ${isScrolled ? 'pt-2' : 'pt-10'}`}>
         <nav className="flex items-center justify-between py-3 md:py-4 relative">
           {/* Logo */}
           <a href="#" className="flex items-center gap-2">
-            <img src={Logo} alt="Lensaloka Logo" className="w-55" />
+            <img src={Logo} alt="Lensaloka Logo" className="w-30 xl:w-40" />
           </a>
 
           {/* Desktop Nav */}
-          <ul className="hidden md:flex gap-6 lg:gap-8 font-primary text-base lg:text-lg">
+          <ul className="hidden lg:flex gap-6 lg:gap-8 font-primary text-base lg:text-lg">
             {navLinks.map(link => (
               <li key={link.name}>
                 <a href={link.href} className="hover:text-secondary transition-colors duration-200">{link.name}</a>
@@ -36,7 +52,7 @@ const Header = () => {
           
           {/* Mobile/Tablet Nav (Hamburger) */}
           <button
-            className="md:hidden p-2 rounded focus:outline-none focus:ring-2 focus:ring-[#EAC347]"
+            className="lg:hidden p-2 rounded focus:outline-none focus:ring-2 focus:ring-[#EAC347]"
             aria-label="Open menu"
             onClick={() => setMenuOpen(!menuOpen)}
           >

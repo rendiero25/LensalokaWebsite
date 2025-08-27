@@ -19,7 +19,7 @@ const WhatUGet = () => {
     return (
         <section
             id='what-u-get'
-            className="w-full py-16 xl:py-40 px-4 bg-cover bg-center relative overflow-hidden"
+            className="w-full py-10 xl:py-20 px-4 bg-cover bg-center relative overflow-hidden"
             style={{
                 backgroundImage: 'linear-gradient(to bottom, #EAC347 0%, #fff 100%)',
                 backgroundSize: 'cover',
@@ -61,9 +61,9 @@ const WhatUGet = () => {
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
                     {items.map((item, idx) => (
-                        <div key={idx} className="flex flex-col items-center text-center rounded-xl h-full">
-                            <img src={item.img} alt={item.desc.split('\n')[0]} className="z-10 xl:h-140 w-400 mb-4" />
-                            <p className="font-secondary text-[#273F3A] whitespace-pre-line text-base md:text-xl">{item.desc}</p>
+                        <div key={idx} className="z-10 flex flex-col items-center text-center rounded-xl h-full bg-white pb-8">
+                            <img src={item.img} alt={item.desc.split('\n')[0]} className="rounded-t-xl  z-10 xl:h-100 w-400 mb-8 shadow-2xl object-cover" />
+                            <p className="font-secondary font-bold text-[#273F3A] whitespace-pre-line text-base md:text-xl">{item.desc}</p>
                         </div>
                     ))}
                     </div>
