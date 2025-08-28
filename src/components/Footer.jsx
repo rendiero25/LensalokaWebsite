@@ -8,7 +8,7 @@ const navLinks = [
     { name: 'Clients', href: '#clients' },
     { name: 'Services', href: '#services' },
     { name: 'Instant Prints', href: '#instant-prints' },
-    { name: 'What U Get', href: '#what-u-get' },
+    { name: 'What You Get', href: '#what-u-get' },
     { name: 'Portfolio', href: '#portfolio' },
     { name: 'Testimonial', href: '#testimonial' },
 ];
@@ -40,18 +40,19 @@ const Footer = () => {
                         {/* Kiri: Info */}
                         <div className="flex-1 flex flex-col gap-1 items-center md:items-start">
                             <img src={Logo} alt="Lensaloka Logo" className="h-15 mb-5" />
-                            <div className="font-primary text-4xl xl:text-5xl text-center xl:text-left font-normal mb-5">PT Lensaloka Sukses Abadi</div>
-                            <div className="font-secondary text-center xl:text-left text-base">Jl. Melati Raya No. 25, Jakarta Selatan, 12150 | Senin - Jumat, 08.00 - 17.00 wib</div>
+                            <div className="font-primary text-4xl xl:text-4xl text-center xl:text-left font-normal mb-2">PT Lensaloka Sukses Abadi</div>
+                            <div className="font-secondary text-center xl:text-left text-base">Jl. Bungur No.27 A, RT.12/RW.2, Kby. Lama Utara, Kec. Kby. Lama, Kota Jakarta Selatan</div>
+                            <div className="font-secondary text-center xl:text-left text-base">Senin - Jumat, 08.00 - 17.00 wib</div>
                             <div className="font-secondary text-center xl:text-left text-base"></div>
                             <div className="font-secondary text-center xl:text-left text-base">+62 812-3456-7890 | hello@lensaloka.com</div>
                             <div className="flex gap-4 mt-2">
                                 <div className='flex flex-row justify-center'>
                                     <FaInstagram className="text-2xl mr-2" />
-                                    <a href="https://instagram.com/lensaloka" target="_blank" rel="noopener noreferrer" className="hover:underline font-secondary">lensaloka</a>
+                                    <a href="https://instagram.com/lensalokastudio" target="_blank" rel="noopener noreferrer" className="hover:underline font-secondary">lensaloka</a>
                                 </div>
                                 <div className='flex flex-row justify-center'>
                                     <FaTiktok className="text-2xl mr-2" />
-                                    <a href="https://tiktok.com/@lensaloka" target="_blank" rel="noopener noreferrer" className="hover:underline font-secondary">lensaloka</a>
+                                    <a href="https://www.tiktok.com/@lensalokastudio" target="_blank" rel="noopener noreferrer" className="hover:underline font-secondary">lensaloka</a>
                                 </div>
                             </div>
                         </div>

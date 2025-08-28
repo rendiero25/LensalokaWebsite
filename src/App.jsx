@@ -37,7 +37,7 @@ const App = () => {
   return (
     <div className="m-0 p-0 box-border">
       {/* WhatsApp Floating Button with Tooltip */}
-      <div className="fixed bottom-8 right-8 z-[9999] group">
+      <div className="fixed bottom-8 right-8 group" style={{ zIndex: 999998 }}>
         <a
           href="https://wa.me/6285396144172?text=Halo%2C%20saya%20ingin%20bertanya%20mengenai"
           target="_blank"
@@ -59,21 +59,22 @@ const App = () => {
 
       <div className="w-full">
         {/* Section: Header + Hero with video background */}
-        <section className="relative w-full min-h-screen overflow-hidden">
+        <section className="relative w-full min-h-screen overflow-hidden" style={{ zIndex: 1 }}>
           <div className="w-full h-full absolute">
             <video
-            className="top-0 left-0 w-full h-full object-cover z-0 pointer-events-none"
+            className="top-0 left-0 w-full h-full object-cover pointer-events-none"
             src={Bgvideo}
             autoPlay
             loop
             muted
             playsInline
+            style={{ zIndex: 1 }}
           />
           </div>
           
-          <div className="absolute top-0 left-0 w-full h-full bg-[#273F3A]/60 z-10 pointer-events-none" />
+          <div className="absolute top-0 left-0 w-full h-full bg-[#273F3A]/60 pointer-events-none" style={{ zIndex: 2 }} />
           
-          <div className="relative z-20 w-full flex flex-col min-h-screen">
+          <div className="relative w-full flex flex-col min-h-screen" style={{ zIndex: 3 }}>
             <Header />
             <Hero />
           </div>
