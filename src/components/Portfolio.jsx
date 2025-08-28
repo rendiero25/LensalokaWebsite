@@ -53,7 +53,7 @@ const Portfolio = () => {
             className="w-full py-16 xl:py-10 px-4 bg-cover bg-center relative overflow-hidden"
         >
             {/* BgLines absolute di atas dan bawah section, berkelanjutan */}
-            <img
+            {/* <img
                 src={BgLines}
                 alt="bg lines atas"
                 className="absolute top-0 left-0 w-full object-cover pointer-events-none select-none"
@@ -72,7 +72,7 @@ const Portfolio = () => {
                     zIndex: 1,
                     opacity: 0.7,
                 }}
-            />
+            /> */}
             <div className='flex justify-center items-center'>
                 <div className="container mx-auto px-6 sm:px-12 justify-between items-center w-full">
                     <h2 className="font-primary text-3xl md:text-5xl font-normal text-center text-[#273F3A] mb-5 xl:mb-10">Portofolio Event</h2>

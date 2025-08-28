@@ -28,7 +28,7 @@ const WhatUGet = () => {
         >
             {/* BgLines absolute memenuhi seluruh section */}
                 {/* BgLines absolute atas dan bawah section */}
-                <img
+                {/* <img
                     src={BgLines}
                     alt="bg lines atas"
                     className="absolute top-0 left-0 w-full object-cover pointer-events-none select-none"
@@ -47,7 +47,7 @@ const WhatUGet = () => {
                         zIndex: 1,
                         opacity: 0.7,
                     }}
-                />
+                /> */}
             <div className='flex justify-center items-center'>
                 <div className="container px-6 sm:px-12 flex flex-col justify-between items-center">
                     <div className="flex flex-col md:flex-row w-full justify-between items-end md:gap-8 mb-10">

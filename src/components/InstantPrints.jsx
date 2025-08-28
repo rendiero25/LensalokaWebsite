@@ -14,7 +14,7 @@ const InstantPrints = () => {
             className="w-full bg-cover bg-center relative overflow-hidden"
         >
             {/* BgLines absolute atas dan bawah section */}
-            <img
+            {/* <img
                 src={BgLines}
                 alt="bg lines atas"
                 className="absolute top-0 left-0 w-full object-cover pointer-events-none select-none"
@@ -23,8 +23,8 @@ const InstantPrints = () => {
                     zIndex: 1,
                     opacity: 0.7,
                 }}
-            />
-            <img
+            /> */}
+            {/* <img
                 src={BgLines}
                 alt="bg lines bawah"
                 className="absolute bottom-0 left-0 w-full object-cover pointer-events-none select-none"
@@ -33,7 +33,7 @@ const InstantPrints = () => {
                     zIndex: 1,
                     opacity: 0.7,
                 }}
-            />
+            /> */}
             <div className="w-full px-6 sm:px-12 text-center flex flex-col justify-between items-center">
                 <h2 className="font-primary text-3xl md:text-5xl font-normal text-[#273F3A] mb-4">Instant Prints</h2>
                 <p className="font-secondary text-lg md:text-3xl text-[#273F3A] mb-6 font-normal">Spontaneous Moments Captured Instantly</p>

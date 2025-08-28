@@ -16,7 +16,7 @@ const Services = () => {
             }}
         >
             {/* BgLines absolute atas dan bawah section */}
-            <img
+            {/* <img
                 src={BgLines}
                 alt="bg lines atas"
                 className="absolute top-0 left-0 w-full object-cover pointer-events-none select-none"
@@ -35,7 +35,8 @@ const Services = () => {
                     zIndex: 1,
                     opacity: 0.7,
                 }}
-            />
+            /> */}
+
             <div className='flex justify-center items-center relative z-10'>
                 <div className='flex justify-center items-center'>
                     <div className="container mx-auto px-6 sm:px-12 py-10 xl:py-10">
