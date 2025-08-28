@@ -8,7 +8,7 @@ const Why = () => {
         <section 
             id='why'
             className="w-full py-10 xl:py-10 bg-cover bg-center"
-            style={{ backgroundImage: `url(${BgLines})`, objectFit: 'cover' }}
+            // style={{ backgroundImage: `url(${BgLines})`, objectFit: 'cover' }}
             >             
                 <div className='flex justify-center items-center'>
                     <div className="container w-full mx-auto px-6 sm:px-12 ">
