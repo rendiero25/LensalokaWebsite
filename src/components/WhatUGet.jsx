@@ -4,7 +4,7 @@ import WhatUGet2 from '../assets/images/whatuget2.png';
 import WhatUGet3 from '../assets/images/whatuget3.png';
 import WhatUGet4 from '../assets/images/whatuget4.png';
 import WhatUGet5 from '../assets/images/whatuget5.png';
-import WhatUGet6 from '../assets/images/whatuget6.png';
+import WhatUGet6 from '../assets/images/whatuget6.jpg';
 
 const items = [
   { img: WhatUGet1, desc: 'Cetakan instan\nberkualitas tinggi' },

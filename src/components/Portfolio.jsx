@@ -1,14 +1,11 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
-import Barsena from '../assets/images/barsena.png';
-import Yuka from '../assets/images/yuka.png';
-import Dimas from '../assets/images/dimas.png';
 import { FaArrowCircleLeft } from "react-icons/fa";
 import { FaArrowCircleRight } from "react-icons/fa";
-import BgLines from '../assets/images/bg-lines.png';
+// import BgLines from '../assets/images/bg-lines.png';
 
 const imageListAirasia = Object.values(import.meta.glob('../assets/images/Portfolio/airasia/*.{jpg,jpeg,png,webp}', {eager: true})).map(mod => mod.default);
 const imageListFootlocker = Object.values(import.meta.glob('../assets/images/Portfolio/footlocker/*.{jpg,jpeg,png,webp}', {eager: true})).map(mod => mod.default);
@@ -17,34 +14,92 @@ const imageListKorres = Object.values(import.meta.glob('../assets/images/Portfol
 const imageListLazada = Object.values(import.meta.glob('../assets/images/Portfolio/lazada/*.{jpg,jpeg,png,webp}', {eager: true})).map(mod => mod.default);
 const imageListPutriindonesia = Object.values(import.meta.glob('../assets/images/Portfolio/putriindonesia/*.{jpg,jpeg,png,webp}', {eager: true})).map(mod => mod.default);
 const imageListUkembassy = Object.values(import.meta.glob('../assets/images/Portfolio/ukembassy/*.{jpg,jpeg,png,webp}', {eager: true})).map(mod => mod.default);
+const imageListTineco = Object.values(import.meta.glob('../assets/images/Portfolio/tineco/*.{jpg,jpeg,png,webp}', {eager: true})).map(mod => mod.default);
+const imageListEcovacs = Object.values(import.meta.glob('../assets/images/Portfolio/ecovacs/*.{jpg,jpeg,png,webp}', {eager: true})).map(mod => mod.default);
+
+const imageListBarsena = Object.values(import.meta.glob('../assets/images/Portfolio/barsena/*.{jpg,jpeg,png,webp}', {eager: true})).map(mod => mod.default);
+const imageListDimas = Object.values(import.meta.glob('../assets/images/Portfolio/dimas/*.{jpg,jpeg,png,webp}', {eager: true})).map(mod => mod.default);
+const imageListYuka = Object.values(import.meta.glob('../assets/images/Portfolio/yukadanaya/*.{jpg,jpeg,png,webp}', {eager: true})).map(mod => mod.default);
 
 const brands = [
     { name: 'AirAsia', images: imageListAirasia },
     { name: 'Foot Locker', images: imageListFootlocker },
+    { name: 'Tineco', images: imageListTineco },
+    { name: 'Ecovacs', images: imageListEcovacs },
     { name: 'JKT Art House', images: imageListJktarthouse },
     { name: 'Korres', images: imageListKorres },
     { name: 'Lazada', images: imageListLazada },
     { name: 'Putri Indonesia', images: imageListPutriindonesia },
-    { name: 'UK Embassy', images: imageListUkembassy },
+    { name: 'UK Embassy', images: imageListUkembassy }
 ];
 
 const influencers = [
-    { name: 'Barsena', img: Barsena },
-    { name: 'Yuka', img: Yuka },
-    { name: 'Dimas', img: Dimas },
+    { name: 'Barsena', img: imageListBarsena[0], images: imageListBarsena },
+    { name: 'Yuka', img: imageListYuka[0], images: imageListYuka },
+    { name: 'Dimas', img: imageListDimas[0], images: imageListDimas },
 ];
 
 const Portfolio = () => {
     const [modalOpen, setModalOpen] = useState(false);
     const [activeBrand, setActiveBrand] = useState(null);
 
+    // Block scroll when modal is open
+    useEffect(() => {
+        if (modalOpen) {
+            document.body.style.overflow = 'hidden';
+            
+            // Add CSS to hide testimonials behind modal
+            const style = document.createElement('style');
+            style.id = 'modal-testimonial-override';
+            style.textContent = `
+                #testimonial {
+                    z-index: -1 !important;
+                    position: relative !important;
+                }
+                #testimonial .swiper-slide {
+                    z-index: -1 !important;
+                }
+                #testimonial .swiper-wrapper {
+                    z-index: -1 !important;
+                }
+                #testimonial .swiper {
+                    z-index: -1 !important;
+                }
+            `;
+            document.head.appendChild(style);
+        } else {
+            document.body.style.overflow = 'unset';
+            
+            // Remove testimonial override styles
+            const existingStyle = document.getElementById('modal-testimonial-override');
+            if (existingStyle) {
+                existingStyle.remove();
+            }
+        }
+
+        // Cleanup on unmount
+        return () => {
+            document.body.style.overflow = 'unset';
+            const existingStyle = document.getElementById('modal-testimonial-override');
+            if (existingStyle) {
+                existingStyle.remove();
+            }
+        };
+    }, [modalOpen]);
+
     const openModal = (brand) => {
         setActiveBrand(brand);
         setModalOpen(true);
     };
+    
     const closeModal = () => {
         setModalOpen(false);
         setActiveBrand(null);
+    };
+
+    // Handle click anywhere in modal to close
+    const handleModalClick = () => {
+        closeModal();
     };
 
     return (
@@ -150,17 +205,37 @@ const Portfolio = () => {
 
                     {/* Modal Gallery */}
                     {modalOpen && activeBrand && (
-                        <div className="fixed inset-0 bg-primary/90 z-50 flex items-center justify-center">
-                            <div className="relative w-full h-full flex items-center justify-center">
-                                <button
+                        <div 
+                            className="mt-15 xl:mt-20 fixed inset-0 bg-primary/90 z-[9999] flex items-center justify-center"
+                            onClick={handleModalClick}
+                        >
+                            <div 
+                                className="relative w-full h-full flex items-center justify-center"
+                            >
+                                {/* <button
                                     className="absolute top-4 cursor-pointer right-8 text-white text-3xl z-50"
                                     onClick={closeModal}
                                     aria-label="Close"
                                 >
                                     &times;
+                                </button> */}
+
+                                {/* Close button di kanan tengah */}
+                                <button
+                                    className="absolute right-20 top-1/2 transform -translate-y-1/2 cursor-pointer text-white text-4xl z-50 bg-black/30 hover:bg-black/50 rounded-full w-12 h-12 flex items-center justify-center transition-all duration-200"
+                                    onClick={(e) => {
+                                        e.stopPropagation();
+                                        closeModal();
+                                    }}
+                                    aria-label="Close Modal"
+                                >
+                                    &times;
                                 </button>
 
-                                <div className="w-full max-w-5xl h-[80vh] flex items-center justify-center relative">
+                                <div 
+                                    className="max-w-xs xl:max-w-4xl h-[80vh] flex items-center justify-center relative"
+                                    onClick={(e) => e.stopPropagation()}
+                                >
                                     {/* Gallery Slider */}
                                     <Swiper
                                         modules={[Navigation]}
@@ -180,6 +255,7 @@ const Portfolio = () => {
                                                 <div className="text-white text-xl">Belum ada foto untuk {activeBrand.name}</div>
                                             </SwiperSlide>
                                         )}
+
                                     </Swiper>
                                     {/* Custom CSS for navigation arrows below */}
                                     <style>{`
@@ -226,7 +302,7 @@ const Portfolio = () => {
                                         
                                         <button
                                                 className="font-secondary text-lg xl:text-xl text-primary font-bold cursor-pointer hover:text-[#EAC347]"
-                                                onClick={() => openModal(brand)}
+                                                onClick={() => openModal(item)}
                                             >
                                                 See more
                                             </button>
