@@ -39,7 +39,7 @@ const App = () => {
       {/* WhatsApp Floating Button with Tooltip */}
       <div className="fixed bottom-8 right-8 group" style={{ zIndex: 999998 }}>
         <a
-          href="https://wa.me/6285396144172?text=Halo%2C%20saya%20ingin%20bertanya%20mengenai"
+          href="https://wa.me/6285396144172?text=Halo%2C%20saya%20ingin%20bertanya%20mengenai%20layanan%20Lensaloka"
           target="_blank"
           rel="noopener noreferrer"
           className="block rounded-full bg-[#25D366] p-4 shadow-lg cursor-pointer animate-bounce"

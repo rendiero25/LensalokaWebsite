@@ -69,16 +69,18 @@ const Testimonial = () => {
                         640: { slidesPerView: 1 },
                         1024: { slidesPerView: 3 },
                     }}
-                    className="mb-12 h-90 xl:h-67 flex"
+                    className="mb-12 h-144 xl:h-107 flex"
                 >
                     {testimonials.map((item, idx) => (
-                        <SwiperSlide key={idx} className="flex flex-col items-center justify-between bg-secondary rounded-4xl p-8">
-                            <div className="font-secondary text-lg text-[#273F3A] mb-6">"{item.text}"</div>
-                            <div className='flex flex-row justify-start items-center gap-2'>
-                                <img src={item.pic} alt={item.name} className="size-15 rounded-full object-cover" />
-                                <div className='flex flex-col justify-center items-start'>
-                                    <div className="font-primary text-base font-bold text-[#273F3A]">{item.name}</div>
-                                    <div className="font-secondary text-sm text-[#273F3A]">{item.position}</div>
+                        <SwiperSlide key={idx} className="flex flex-col items-start justify-between bg-secondary rounded-4xl p-8 h-full">
+                            <div className='h-full flex flex-col justify-between items-center xl:items-start'>
+                                <div className="font-secondary text-lg text-center xl:text-left text-[#273F3A] mb-6">"{item.text}"</div>
+                                <div className='flex flex-col xl:flex-row justify-start items-center gap-6'>
+                                    <img src={item.pic} alt={item.name} className="size-50 shadow-2xl rounded-full object-cover" />
+                                    <div className='flex flex-col justify-center items-center xl:items-start text-center xl:text-left'>
+                                        <div className="font-primary text-base font-bold text-[#273F3A]">{item.name}</div>
+                                        <div className="font-secondary text-sm text-[#273F3A]">{item.position}</div>
+                                    </div>
                                 </div>
                             </div>
                         </SwiperSlide>

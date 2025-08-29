@@ -220,9 +220,9 @@ const Portfolio = () => {
                                     &times;
                                 </button> */}
 
-                                {/* Close button di kanan tengah */}
+                                {/* Close button - responsive positioning */}
                                 <button
-                                    className="absolute right-20 top-1/2 transform -translate-y-1/2 cursor-pointer text-white text-4xl z-50 bg-black/30 hover:bg-black/50 rounded-full w-12 h-12 flex items-center justify-center transition-all duration-200"
+                                    className="absolute right-4 top-8 md:right-20 md:top-1/2 md:transform md:-translate-y-1/2 cursor-pointer text-white text-4xl z-50 bg-black/30 hover:bg-black/50 rounded-full w-12 h-12 flex items-center justify-center transition-all duration-200"
                                     onClick={(e) => {
                                         e.stopPropagation();
                                         closeModal();
@@ -233,9 +233,19 @@ const Portfolio = () => {
                                 </button>
 
                                 <div 
-                                    className="max-w-xs xl:max-w-4xl h-[80vh] flex items-center justify-center relative"
+                                    className="pt-10 xl:pt-0 max-w-xs xl:max-w-4xl h-[80vh] flex items-center justify-center relative"
                                     onClick={(e) => e.stopPropagation()}
                                 >
+                                    {/* Clickable area above image */}
+                                    <div 
+                                        className="absolute top-0 left-0 right-0 h-20 cursor-pointer z-40"
+                                        onClick={(e) => {
+                                            e.stopPropagation();
+                                            closeModal();
+                                        }}
+                                        aria-label="Click to close modal"
+                                    ></div>
+
                                     {/* Gallery Slider */}
                                     <Swiper
                                         modules={[Navigation]}
@@ -257,6 +267,17 @@ const Portfolio = () => {
                                         )}
 
                                     </Swiper>
+
+                                    {/* Clickable area below image */}
+                                    <div 
+                                        className="absolute bottom-0 left-0 right-0 h-20 cursor-pointer z-40"
+                                        onClick={(e) => {
+                                            e.stopPropagation();
+                                            closeModal();
+                                        }}
+                                        aria-label="Click to close modal"
+                                    ></div>
+
                                     {/* Custom CSS for navigation arrows below */}
                                     <style>{`
                                         .swiper-modal-gallery .swiper-button-next,

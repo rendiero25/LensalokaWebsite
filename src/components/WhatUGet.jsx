@@ -1,18 +1,18 @@
 import BgLines from '../assets/images/bg-lines.png';
-import WhatUGet1 from '../assets/images/whatuget1.png';
-import WhatUGet2 from '../assets/images/whatuget2.png';
-import WhatUGet3 from '../assets/images/whatuget3.png';
-import WhatUGet4 from '../assets/images/whatuget4.png';
-import WhatUGet5 from '../assets/images/whatuget5.png';
+import WhatUGet1 from '../assets/images/whatuget1.jpg';
+import WhatUGet2 from '../assets/images/whatuget2.jpg';
+import WhatUGet3 from '../assets/images/whatuget3.jpg';
+import WhatUGet4 from '../assets/images/whatuget4.jpg';
+import WhatUGet5 from '../assets/images/whatuget5.jpg';
 import WhatUGet6 from '../assets/images/whatuget6.jpg';
 
 const items = [
-  { img: WhatUGet1, desc: 'Cetakan instan\nberkualitas tinggi' },
+  { img: WhatUGet1, desc: 'Design Frame ' },
   { img: WhatUGet2, desc: 'Tim profesional\n(operator + fotografer)' },
-  { img: WhatUGet3, desc: 'Desain frame &\ntemplate cetakan custom' },
-  { img: WhatUGet4, desc: 'Unlimited photo\nsession selama event' },
-  { img: WhatUGet5, desc: 'File digital\n(Google Drive / QR Access)' },
-  { img: WhatUGet6, desc: 'Branding activation yang\nengage dengan audiens' },
+  { img: WhatUGet3, desc: 'Unlimited photo\nsession selama event' },
+  { img: WhatUGet5, desc: 'Cetakan Instan\nBerkualitas Tinggi' },
+  { img: WhatUGet4, desc: 'File digital\n(Google Drive / QR Access)' },
+  { img: WhatUGet6, desc: 'Backdrop Pilihan' },
 ];
 
 const WhatUGet = () => {

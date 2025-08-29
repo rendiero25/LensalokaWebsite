@@ -17,7 +17,7 @@ const Hero = () => {
             </p>
 
                 <a
-                    href="https://wa.me/6285396144172?text=Halo%2C%20saya%20ingin%20bertanya%20mengenai"
+                    href="https://wa.me/6285396144172?text=Halo%2C%20saya%20ingin%20bertanya%20mengenai%20layanan%20Lensaloka"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="bg-secondary text-[#273F3A] mt-5 xl:mt-20 font-bold px-8 py-3 rounded-full shadow-md hover:bg-[#ffd966] transition mb-6 font-secondary inline-block"
