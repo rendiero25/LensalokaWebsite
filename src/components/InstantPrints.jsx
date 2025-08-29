@@ -34,7 +34,7 @@ const InstantPrints = () => {
                     opacity: 0.7,
                 }}
             /> */}
-            <div className="w-full px-6 sm:px-12 text-center flex flex-col justify-between items-center">
+            <div className="w-full px-6 sm:px-12 text-center flex flex-col justify-between items-center mb-5 xl:mb-0">
                 <h2 className="font-primary text-3xl md:text-5xl font-normal text-[#273F3A] mb-4">Instant Prints</h2>
                 <p className="font-secondary text-lg md:text-3xl text-[#273F3A] mb-6 font-normal">Spontaneous Moments Captured Instantly</p>
                 <p className="font-secondary font-normal text-md md:text-2xl text-[#273F3A] max-w-4xl mb-0 xl:mb-8">

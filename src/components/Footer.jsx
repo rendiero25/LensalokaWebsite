@@ -1,7 +1,7 @@
 import Logo from '../assets/images/logolensaloka.png';
 import { FaInstagram } from "react-icons/fa";
 import { FaTiktok } from "react-icons/fa";
-import BannerImage2 from '../assets/images/bannerimage2.png';
+import BannerImage2 from '../assets/images/bannerimage2.jpg';
 
 const navLinks = [
     { name: 'Why', href: '#why' },
@@ -44,7 +44,7 @@ const Footer = () => {
                             <div className="font-secondary text-center xl:text-left text-base">Jl. Bungur No.27 A, RT.12/RW.2, Kby. Lama Utara, Kec. Kby. Lama, Kota Jakarta Selatan</div>
                             <div className="font-secondary text-center xl:text-left text-base">Senin - Jumat, 08.00 - 17.00 wib</div>
                             <div className="font-secondary text-center xl:text-left text-base"></div>
-                            <div className="font-secondary text-center xl:text-left text-base">+62 812-3456-7890 | hello@lensaloka.com</div>
+                            <div className="font-secondary text-center xl:text-left text-base">+62 853-9614-4172 | lensalokaphotobooth@gmail.com</div>
                             <div className="flex gap-4 mt-2">
                                 <div className='flex flex-row justify-center'>
                                     <FaInstagram className="text-2xl mr-2" />

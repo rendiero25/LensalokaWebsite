@@ -316,7 +316,7 @@ const Portfolio = () => {
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 xl:gap-8">
                             {influencers.map((item, idx) => (
                                 <div key={idx} className="flex flex-col items-center rounded-xl mb-0 xl:mb-4 p-2 xl:p-6 z-10">
-                                    <img src={item.img} alt={item.name} className="h-70 xl:h-140 w-400 mb-4 object-cover rounded-lg" />
+                                    <img src={item.img} alt={item.name} className="h-90 xl:h-140 w-400 mb-4 object-cover rounded-lg" />
                                     
                                     <div className='flex flex-row justify-between items-center w-full'>
                                         <div className="font-primary text-2xl font-bold bg-secondary py-2 px-4 rounded-full text-[#273F3A]">{item.name}</div>
